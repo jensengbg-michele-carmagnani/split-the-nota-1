@@ -1,3 +1,7 @@
+
+/*
+
+
 const tip;
 const sum;
 const numberOfFriends;
@@ -8,38 +12,59 @@ const calculatedTip;
 const total; 
 
 
-document.getElementById('tip').value;
 
-function calculateTip(sum, tip) {}
+*/
 
-document.getElementById('calculateButton').addEventListener('click', function() {});
 
-document.getElementById('sum').value;
+document.getElementById('calculateButton').addEventListener('click', function() {
+    const sum = document.getElementById('sum').value;
+    const numberOfFriends = document.getElementById('numberOfFriends').value;
+    const tip = document.getElementById('tip').value;
+    
+    
+    const calculatedTip = calculateTip(sum, tip);
 
-calculateTip(sum, tip);
+    const sumDivided = showDividedSum(calculatedTip);
 
-parseInt(sum) + calculatedTip;
+    const friendSum = divideTotal(total, numberOfFriends);
 
-function divideTotal(total, numberOfFriends) {}
+    document.getElementById('inputForm').classList.toggle('hide');
+    document.getElementById('showSum').classList.toggle('hide');
+    document.getElementById('friendSum').innerHTML = sum + ' kr';
+    
+    
+});
 
-document.getElementById('friendSum').innerHTML = sum + ' kr';
 
-return sumDivided;
 
-showDividedSum(friendSum);
 
-document.getElementById('showSum').classList.toggle('hide');
+function calculateTip(sum, tip) {
+   const total =  parseInt(sum) * parseFloat(tip);
+   return total;
+    
+}
+function showDividedSum(sum) {
+    const sumDivided = parseInt(sum) + calculatedTip;
+    return sumDivided;
+    
+    
+}
+ function divideTotal(total, numberOfFriends) {
+   const friendSum = total / parseInt(numberOfFriends);
+    return friendSum;
 
-total / parseInt(numberOfFriends);
+}
 
-function showDividedSum(sum) {}
 
-document.getElementById('inputForm').classList.toggle('hide');
 
-parseInt(sum) * parseFloat(tip);
 
-return total;
 
-divideTotal(total, numberOfFriends);
 
-document.getElementById('numberOfFriends').value;
+
+
+
+
+
+
+
+
