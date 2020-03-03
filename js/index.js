@@ -3,15 +3,20 @@
 
 
 const tip;
+//Dessa är alla variabler du behöver använda. 
+//De ska dock ligga i olika funktioner och inte nedanför.
+
+/*const tip;
 const sum;
 const numberOfFriends;
 const total;
 const friendSum;
 const sumDivided;
 const calculatedTip;
-const total; 
+const total; */
 
-
+//Hämtar det som skrivits i inputfältet med ID tip
+document.getElementById('tip').value;
 
 */
 
@@ -54,6 +59,15 @@ function showDividedSum(sum) {
     return friendSum;
 
 }
+//Hämtar det som skrivits i inputfältet med ID sum
+document.getElementById('sum').value;
+
+
+
+
+
+//Returnerar värdet i variablen sumDivided i en funktion
+return sumDivided;
 
 
 
@@ -61,10 +75,9 @@ function showDividedSum(sum) {
 
 
 
+//Returnerar värdet i variablen total i en funktion
+return total;
 
 
-
-
-
-
-
+//Hämtar det som skrivits i inputfältet med ID numberOfFriends
+document.getElementById('numberOfFriends').value;
